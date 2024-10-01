@@ -1,0 +1,17 @@
+type Query {
+    allPosts: [Post]!
+}
+
+type Mutation {
+    createPost(
+        title: String!
+        content: String!
+    ): Post!
+}
+
+type Post {
+    id: ID!
+    title: String!
+    content: String!
+    time: String!
+}
